@@ -1,7 +1,7 @@
 {
-  "name": "game-of-life",
+  "name": "@izi_ride/game-of-life",
   "version": "0.2.0",
-  "description": "game-of-life",
+  "description": "Game Of Life in TS",
   "license": "MIT",
   "repository": "",
   "author": {
