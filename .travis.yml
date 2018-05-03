@@ -1,15 +1,16 @@
 language: node_js
-
 node_js:
-  - 'node' # use latest stable nodejs version
+- node
 script:
-  - npm run prebuild
-  - npm run coverage # jest test with coverage flag does coverage too
+- npm run prebuild
+- npm run coverage
 after_script:
-  - 'cat coverage/lcov.info | ./node_modules/.bin/coveralls' # sends the coverage report to coveralls
-
+- cat coverage/lcov.info | ./node_modules/.bin/coveralls
 deploy:
   provider: npm
-  skip-cleanup: true
-  email: $EMAIL
-  api_key: $NPM_TOKEN
+  email: krzysztof.suchomski@gmail.com
+  api_key:
+    secure: OicCEvjojWiTBvp9VwH12qBlaUu3v7NpC8zv6qELuPO9b1MhxY1ncYXZOgmmoAbQgtHgEuuXHqSwbNMs9JrHnri7/t8v2SA+iSiPWxIi/zCvmdTNsrYiCCItmMJObXPAzbOf7xwVxpjDmIkK5Dogp6KYKKhsw11O+6xBCOuXNia/8EHgne+8AGkDRt9ono0zK5a0QampjYYZQHnNbB9/YsYXyXyFVw1Zn49Fu30uiAYfTFfU281qSEPyGJyL5xq8Kol3T/KsuDlNmrlPmzAJ5ftEfDsTDZ/a75i7UktWgfw0vNgD4f3CsS/2lEsYZuugBWMkLAXbUQMWkmFtW0Lyn2Zu4Ici8EIZdpgVS29YHzhdt4q27dK0NTUHt8kLmnkRvMJ0eCrNohNT/3bsqwHfBPPiZzSZysoF/6wflXdK0eNkXqngg6eVeA93mohHhAgF6+PYq/JBHW+QYWroNDTB7BXlafZ3KF0qzM9xvD3gMiAXAO/fKD+6qI3XV4goKunOHVshgS3MNV2HpPsqjF6kKENAOQd9b5zNN5+x1X5iWx82K/KKy9LZi4jsD51Y6+MG4zsAJIPE2qTz+tA9t+C6IQ9i7fXKNBn9TEL/veN6m6ILKk3KntJCAXIRAGY1PvU1JwL2TIKpT5nJwxgTx/axURRcW7EeAEmurAtKT8BUSw0=
+  on:
+    repo: izi/game-of-life
+    branch: master
