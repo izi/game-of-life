@@ -1,4 +1,4 @@
-import { GameOfLife } from '../src/game-of-life';
+import { GameOfLife } from './game-of-life';
 
 export class GameOfLifePattern {
   public static block() {
