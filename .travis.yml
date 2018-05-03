@@ -14,3 +14,4 @@ deploy:
   on:
     repo: izi/game-of-life
     branch: master
+  skip_cleanup: true
