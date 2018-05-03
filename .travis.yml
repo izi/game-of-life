@@ -10,5 +10,6 @@ after_script:
 
 deploy:
   provider: npm
+  skip-cleanup: true
   email: $EMAIL
   api_key: $NPM_TOKEN
