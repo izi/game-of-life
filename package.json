@@ -1,16 +1,17 @@
 {
   "name": "@izi_ride/game-of-life",
   "version": "0.3.0",
-  "description": "Game Of Life in TS",
+  "description": "Conway's Game Of Life in TypeScript",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/izi/game-of-life",
+  "homepage": "https://deadlock.ninja/game",
   "author": {
-    "name": "izi",
-    "email": "",
-    "url": ""
+    "name": "izi"
   },
   "keywords": [
-    ""
+    "Game of Life",
+    "Conway",
+    "TypeScript"
   ],
   "files": [
     "lib"
@@ -41,7 +42,7 @@
     "ts-node": "^6.0.2",
     "tslint": "^5.0.0",
     "tslint-config-prettier": "^1.1.0",
-    "typescript": "^2.3.0"
+    "typescript": "^2.8.0"
   },
   "engines": {
     "node": ">=6.0.0"

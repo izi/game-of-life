@@ -93,11 +93,13 @@ export class GameOfLife {
   }
 
   private indexOnPlane(index: number, planeSize: number) {
-    return index < 0
-      ? index + planeSize
-      : index >= planeSize
-        ? index - planeSize
-        : index;
+    if (index < 0) {
+      return index + planeSize;
+    } else if (index >= planeSize) {
+      return index - planeSize
+    } else {
+      return index;
+    }
   }
 
   private isWithinPlane(i: number, j: number) {
